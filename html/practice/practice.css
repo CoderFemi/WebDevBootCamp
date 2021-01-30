@@ -1,0 +1,17 @@
+h1 {
+    text-align: center;
+    color: green;
+    background-color: violet;
+    text-decoration: blue underline wavy;
+    letter-spacing: 10px;
+}
+
+p {
+    color: blue;
+    font-weight: bold;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
