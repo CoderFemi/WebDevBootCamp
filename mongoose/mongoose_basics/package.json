@@ -1,0 +1,16 @@
+{
+  "name": "mongoose_basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "db": "/Users/Femi/mongodb/bin/mongod.exe --dbpath=/Users/Femi/mongodb-data"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^5.10.0"
+  }
+}
