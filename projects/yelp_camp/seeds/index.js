@@ -16,11 +16,8 @@ db.once("open", () => {
     console.log("Database connected");
 });
 
+const sample = array => array[Math.floor(Math.random() * array.length)];
 
-const sample = (array) => { 
-    const arrayIndex = Math.floor(Math.random() * array.length)
-    return array[arrayIndex];
-}
 
 const seedDB = async () => {
     await Campground.deleteMany({});
@@ -39,6 +36,5 @@ const seedDB = async () => {
 }
 
 seedDB().then(() => {
-    console.log('Seed data populated')
     mongoose.connection.close();
 })
