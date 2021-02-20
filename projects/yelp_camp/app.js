@@ -67,6 +67,8 @@ app.use(methodOverride('_method'));
 
 app.use('/campgrounds', campgroundRoutes)
 app.use('/campgrounds/:id/reviews', reviewRoutes)
+app.use('/users', userRoutes)
+
 
 app.get('/', (req, res) => {
     res.render('home')
