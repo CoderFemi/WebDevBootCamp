@@ -48,6 +48,8 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
+// res.locals is an object passed to whatever rendering engine your app is using(in this case ejs).They'll be 'global' in the render, so you don't need to prepend anything on to them to use them.
+
 app.use((req, res, next) => {
     res.locals.currentUser = req.user;
     res.locals.success = req.flash('success');
