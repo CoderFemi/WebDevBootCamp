@@ -6,7 +6,7 @@ const geocoder = mbxGeocoding({ accessToken: mapBoxToken });
 
 
 const index = async (req, res) => {
-    const campgrounds = await Campground.find({});
+    const campgrounds = await Campground.find({}).populate('popupText');
     res.render('campgrounds/index', { campgrounds })
 }
 
